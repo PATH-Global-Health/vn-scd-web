@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: c-his-facility-management
+  name: c-his-facility-management
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: c-his-facility-management
+  template:
+    metadata:
+      labels:
+        app: c-his-facility-management
+        build_number: ${BUILD_NUMBER}
+        role: rolling-update
+      name: c-his-facility-management
+    spec:
+      containers:
+      - image: 192.168.1.2:5000/c-his-facility-management:beta
+        imagePullPolicy: Always
+        name: c-his-facility-management
+        ports:
+        - containerPort: 80
+          name: http
+      imagePullSecrets:
+      - name: mydockercredentials
+  strategy:
+    type: RollingUpdate
+  revisionHistoryLimit: 0

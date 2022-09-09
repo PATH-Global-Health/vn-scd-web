@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap');
+/* #region global */
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-weight: 400;
+}
+
+.d-none {
+  display: none;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.m-t-2 {
+  margin-top: 2px !important;
+}
+
+/* #endregion */
+
+/* data-table action button */
+
+.ui.top.popup {
+  margin: 0 0 1.4em !important;
+}
+
+/* semantic form */
+
+.ui.form textarea {
+  font-family: inherit;
+}
+
+.ui.form:not(.tiny) .dropdown,
+.ui.form:not(.tiny) input {
+  min-height: 42px;
+}
+
+/* react-day-picker */
+
+.DayPicker-Day {
+  min-height: 44px !important;
+  min-width: 44px !important;
+  outline: none !important;
+  border: 1px solid transparent !important;
+}
+
+.DayPicker-Month {
+  border-collapse: separate !important;
+}
+
+.DayPicker-WeekNumber {
+  outline: none !important;
+}
+
+.DayPicker-Day--hoverRange {
+  background-color: #efefef !important;
+  border-radius: 0 !important;
+}
+
+.DayPicker-Day--selectedRange {
+  border-radius: 0 !important;
+  background-color: #ffbb56 !important;
+  border-top-color: #f9aa33 !important;
+  border-bottom-color: #f9aa33 !important;
+  border-left-color: #ffbb56 !important;
+  border-right-color: #f1d6ac !important;
+  color: white !important;
+}
+
+.DayPicker-Day--selectedRange:not(.DayPicker-Day--outside).DayPicker-Day--selected,
+.DayPicker-Day--hoverRange:not(.DayPicker-Day--outside).DayPicker-Day--selected {
+  border-radius: 0 !important;
+  color: black !important;
+}
+
+.DayPicker-Day--hoverRange:hover {
+  border-radius: 0 !important;
+}
+
+.DayPickerInput {
+  width: 100%;
+}
+
+/* list-data */
+
+.ui.celled.list > .item {
+  padding: 0.5em !important;
+}
+
+/* flowing popup */
+
+.flowing-popup {
+  max-width: calc(100% - 80px) !important;
+}
+
+.range-picker
+  .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+  background-color: #f0f8ff !important;
+  color: #4a90e2;
+}
+
+.range-picker .DayPicker-Day {
+  border-radius: 0 !important;
+}
+
+.range-picker .DayPicker-Day--start {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.range-picker .DayPicker-Day--end {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.requiredLabel:after {
+  content: ' *';
+  color: red;
+}
+
+.field-center {
+  text-align: center;
+}
+
+.field-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultCard {
+  background-color: #c7d9f1;
+}
+
+.testCard {
+  background-color: rgb(227, 245, 227);
+}
+
+.wrapperServiceStatus {
+  /* width: 80%; */
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.divConsultStatus {
+  width: 20%;
+  height: 50px;
+  background-color: #c7d9f1;
+  border-radius: 10px;
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divTestStatus {
+  width: 20%;
+  height: 50px;
+  background-color: rgb(227, 245, 227);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-loader {
+  font-family: 'Chilanka';
+}
+
+.ui.icon.menu .item {
+  text-align: left !important;
+}
+
+.InputFromTo
+  .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+  background-color: #f0f8ff !important;
+  color: #4a90e2;
+}
+.InputFromTo .DayPicker-Day {
+  border-radius: 0 !important;
+}
+.InputFromTo .DayPicker-Day--start {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+.InputFromTo .DayPicker-Day--end {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+.InputFromTo .DayPickerInput-Overlay {
+  width: 550px;
+}
+.InputFromTo-to .DayPickerInput-Overlay {
+  margin-left: -198px;
+}
+.project-modal .ui.form .fields,
+.cbo-modal .ui.form .fields {
+  margin: 0em 0em 0.5em !important;
+}
+
+.cbo-modal {
+  margin: 0 !important;
+}
+.project-modal .ui.form .fields > .field:first-child,
+.cbo-modal .ui.form .fields > .field:first-child {
+  padding-left: 0 !important;
+}
+.project-modal .ui.form .fields > .field:last-child,
+.cbo-modal .ui.form .fields > .field:last-child {
+  padding-right: 0 !important;
+}
+
+.project-modal > .content {
+  padding: 1rem 1.5rem !important;
+}
+
+.cbo-modal > .header {
+  padding: 0.75rem 1.5rem !important;
+}
+
+.cbo-modal > .content {
+  padding: 0 1.5rem 1rem 1.5rem !important;
+}

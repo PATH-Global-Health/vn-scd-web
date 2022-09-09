@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "@app/*": ["@app/*"],
+      "@admin/*": ["admin/*"],
+      "@csyt/*": ["csyt/*"],
+      "@smd/*": ["smd/*"]
+    }
+  }
+}
